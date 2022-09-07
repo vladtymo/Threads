@@ -20,7 +20,7 @@ namespace _08_Thread_join
             Console.WriteLine("Waiting for thread ending...");
 
             //waiting
-            T.Join();
+            //T.Join();
             Console.WriteLine("Program was ended.");
         }
         static void Method()

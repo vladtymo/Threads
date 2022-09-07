@@ -14,6 +14,7 @@ namespace _02_Thread_without_params
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine($"\t\t\t{i} - Hello in thread");
+                Thread.Sleep(50);
             }
         }
         static void Main(string[] args)
@@ -22,7 +23,7 @@ namespace _02_Thread_without_params
             Thread thread = new Thread(Method);
 
             thread.Start();
-            //Method();
+            //Method(); // freeze
 
             for (int i = 0; i < 100; i++)
             {

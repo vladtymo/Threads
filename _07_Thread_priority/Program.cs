@@ -26,15 +26,16 @@ namespace _07_Thread_priority
             t1.Priority = ThreadPriority.Lowest;
             t2.Priority = ThreadPriority.Highest;
 
+            Console.ReadKey();
             t1.Start((object)"t1: Lowest");
             t2.Start((object)"\t\t\tt2: Highest");
-
+             
             Console.ReadKey();
         }
         static void Method(object str)
         {
             string text = (string)str;
-            for (int i = 0; i < 20000; i++)
+            for (int i = 0; i < 20_000; i++)
             {
                 Console.WriteLine("{0} #{1}", text, i.ToString());
             }

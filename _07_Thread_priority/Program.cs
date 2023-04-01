@@ -26,7 +26,6 @@ namespace _07_Thread_priority
             t1.Priority = ThreadPriority.Lowest;
             t2.Priority = ThreadPriority.Highest;
 
-            Console.ReadKey();
             t1.Start((object)"t1: Lowest");
             t2.Start((object)"\t\t\tt2: Highest");
              

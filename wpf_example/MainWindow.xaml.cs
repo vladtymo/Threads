@@ -38,6 +38,7 @@ namespace wpf_example
         {
             bool isContinue = false;
 
+            // виклик коду в основному потоці
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
                 if (progress.Value > 0)
@@ -52,7 +53,7 @@ namespace wpf_example
                     progress.Value++;
                     isContinue = progress.Value < progress.Maximum;
                 }));
-                Thread.Sleep(110);
+                Thread.Sleep(40);
             }
         }
     }

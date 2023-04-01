@@ -5,10 +5,11 @@ do
 {
     input = Console.ReadKey();
 
-    //Thread thread = new Thread(InfinityLoop);
-    //thread.Start();
+    Thread thread = new Thread(InfinityLoop);
+    thread.IsBackground = true;
+    thread.Start();
 
-    InfinityLoop();
+    //InfinityLoop();
 
 } while (input.Key != ConsoleKey.Escape);
 

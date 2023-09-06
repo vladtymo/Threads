@@ -26,9 +26,8 @@ namespace _04_Thread_in_background
         static void Main(string[] args)
         {
             //Primary and secondary threads
-            ThreadStart ts = new ThreadStart(Method);
-            Thread t = new Thread(ts);
-            t.IsBackground = false; // default - false
+            Thread t = new Thread(Method);
+            t.IsBackground = true; // default - false
             t.Start();
 
             Console.WriteLine("ID of primary thread: " + Thread.CurrentThread.GetHashCode());

@@ -48,7 +48,7 @@ namespace wpf_example
 
             while (isContinue)
             {
-                Application.Current.Dispatcher.Invoke(new Action(() => 
+                Application.Current.Dispatcher.Invoke(new Action(() =>
                 {
                     progress.Value++;
                     isContinue = progress.Value < progress.Maximum;

@@ -21,12 +21,18 @@ namespace _03_Thread_with_params
 
         static void Main(string[] args)
         {
+            Console.WriteLine("24 line");
+
             //ParameterizedThreadStart threadstart = new ParameterizedThreadStart(ThreadFunk);
             var thread1 = new Thread(ThreadFunk);
             thread1.Start((object)"One");
 
+            Console.WriteLine("28 line");
+
             Thread thread2 = new Thread(ThreadFunk);
             thread2.Start("\t\tTwo");
+
+            Console.WriteLine("33 line");
 
             Console.WriteLine("End!");
         }

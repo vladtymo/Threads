@@ -11,15 +11,15 @@ namespace _06_Thread_force_quit
     {
         static void Main(string[] args)
         {
-            ThreadStart ts = new ThreadStart(Method);
-            Thread t = new Thread(ts);
-            t.IsBackground = true;
+            //ThreadStart ts = new ThreadStart(Method);
+            Thread t = new Thread(Method);
+            t.IsBackground = false;
             t.Start();
 
             Console.WriteLine("Press any key to force quit thread...");
 
             Console.ReadKey();
-            t.Abort(); 
+            t.Abort();
         }
         static void Method()
         {

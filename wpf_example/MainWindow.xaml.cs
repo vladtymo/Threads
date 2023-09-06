@@ -37,21 +37,22 @@ namespace wpf_example
         private void HardWork()
         {
             bool isContinue = false;
+            double value = 0;
 
             // виклик коду в основному потоці
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
-                if (progress.Value > 0)
-                    progress.Value = progress.Minimum;
-                isContinue = progress.Value < progress.Maximum;
+                value = progress.Value;
             }));
 
-            while (isContinue)
+            if (value > 0) value = 0;
+
+            while (value < 100)
             {
+                ++value;
                 Application.Current.Dispatcher.Invoke(new Action(() => 
                 {
-                    progress.Value++;
-                    isContinue = progress.Value < progress.Maximum;
+                    progress.Value = value;
                 }));
                 Thread.Sleep(40);
             }

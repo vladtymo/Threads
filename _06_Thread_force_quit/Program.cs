@@ -35,11 +35,14 @@ namespace _06_Thread_force_quit
             catch (ThreadAbortException e)
             {
                 Console.WriteLine(e.Message);
+                Thread.ResetAbort();
             }
             finally
             {
                 Console.WriteLine("End Thread Work");
             }
+
+            Console.WriteLine("After try catch...");
         }
     }
 }

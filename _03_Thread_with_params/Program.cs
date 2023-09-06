@@ -22,7 +22,7 @@ namespace _03_Thread_with_params
         static void Main(string[] args)
         {
             //ParameterizedThreadStart threadstart = new ParameterizedThreadStart(ThreadFunk);
-            Thread thread1 = new Thread(ThreadFunk);
+            var thread1 = new Thread(ThreadFunk);
             thread1.Start((object)"One");
 
             Thread thread2 = new Thread(ThreadFunk);

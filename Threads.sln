@@ -23,7 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf_example", "wpf_example\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_task_1", "WpfApp_task_1\WpfApp_task_1.csproj", "{796A9E37-4660-49FF-B79B-C97FAF501C53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_multithread_test", "09_multithread_test\09_multithread_test.csproj", "{9035ED04-B460-4549-B8F2-97ED2D19698E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_multithread_test", "09_multithread_test\09_multithread_test.csproj", "{9035ED04-B460-4549-B8F2-97ED2D19698E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_Thread_force_quit_core", "06_force_quit_core\_06_Thread_force_quit_core.csproj", "{A39B91CA-E799-4392-B8B7-95DE60D3A5D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{9035ED04-B460-4549-B8F2-97ED2D19698E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9035ED04-B460-4549-B8F2-97ED2D19698E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9035ED04-B460-4549-B8F2-97ED2D19698E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39B91CA-E799-4392-B8B7-95DE60D3A5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39B91CA-E799-4392-B8B7-95DE60D3A5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39B91CA-E799-4392-B8B7-95DE60D3A5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39B91CA-E799-4392-B8B7-95DE60D3A5D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

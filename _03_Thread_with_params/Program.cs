@@ -15,7 +15,7 @@ namespace _03_Thread_with_params
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine(ID);
-                Thread.Sleep(100);
+                //Thread.Sleep(100);
             }
         }
 
